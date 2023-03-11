@@ -1,0 +1,275 @@
+
+  :root {
+    --color-background: #fae3ea;
+    --color-primary: #fc8080;
+    --font-family-base: Poppin, sans-serif;
+    --font-size-h1: 1.25rem;
+    --font-size-h2: 1rem;
+  }
+  
+  
+  * {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--color-background);
+    display: grid;
+    font-family: var(--font-family-base);
+    line-height: 1.5;
+    margin: 0;
+    min-block-size: 100vh;
+    padding: 5vmin;
+    place-items: center;
+  }
+  
+  .qr{
+    position: relative;
+    margin-right: 30rem;
+  }
+  address {
+    font-style: normal;
+  }
+  
+  button {
+    border: 0;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+  }
+ 
+  .np{
+    font-family: sans-serif;
+    margin-left: 8rem;
+    font-weight:bold;
+
+  }
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: var(--font-size-h1);
+    line-height: 1.2;
+    margin-block: 0 1.5em;
+  }
+  
+  h2 {
+    font-size: var(--font-size-h2);
+    line-height: 1.2;
+    margin-block: 0 0.5em;
+  }
+  
+  legend {
+    font-weight: 600;
+    margin-block-end: 0.5em;
+    padding: 0;
+  }
+  
+  input {
+    border: 0;
+    color: inherit;
+    font: inherit;
+  }
+  
+  input[type="radio"] {
+    accent-color: var(--color-primary);
+  }
+  
+  table {
+    border-collapse: collapse;
+    inline-size: 100%;
+  }
+  
+  tbody {
+    color: #b4b4b4;
+  }
+  
+  td {
+    padding-block: 0.125em;
+  }
+  
+  tfoot {
+    border-top: 1px solid #b4b4b4;
+    font-weight: 600;
+  }
+  
+  .align {
+    display: grid;
+    place-items: center;
+  }
+  
+  .button {
+    align-items: center;
+    background-color: var(--color-primary);
+    border-radius: 999em;
+    color: #fff;
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    padding-block: 0.75em;
+    padding-inline: 1em;
+    transition: 0.3s;
+  }
+  
+  .button:focus,
+  .button:hover {
+    background-color: #e96363;
+  }
+  
+  .button--full {
+    inline-size: 100%;
+  }
+  
+  .card {
+    border-radius: 1em;
+    background-color: var(--color-primary);
+    color: #fff;
+    padding: 1em;
+  }
+  
+  .form {
+    display: grid;
+    gap: 2em;
+    width: fit-content;
+  }
+  
+  .form__radios {
+    display: grid;
+    gap: 1em;
+  }
+  
+  .form__radio {
+    align-items: center;
+    background-color: #fefdfe;
+    border-radius: 1em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+    display: flex;
+    padding: 1em;
+  }
+  
+  .form__radio label {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    gap: 1em;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    padding-block: 0.5em;
+    padding-inline: 1em;
+  }
+  
+  .icon {
+    block-size: 1em;
+    display: inline-block;
+    fill: currentColor;
+    inline-size: 1em;
+    vertical-align: middle;
+  }
+  
+  .container{
+    background-color: #fbf6f7;
+    background-image: linear-gradient(to bottom, #fbf6f7, #fff);
+    border-radius: 2em;
+    block-size: 812px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+    inline-size: 375px;
+    overflow:auto;
+    padding: 2em;
+    width: 24rem;
+    height: max-content;
+    width:fit-content;
+   
+  }
+  
+  .credit-card {
+    width: 360px;
+    height: 400px;
+    margin: 60px auto 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+}
+.card-number,
+.cvv-input input,
+.month select,
+.year select {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 14px;
+}
+ 
+.card-number,
+.month select,
+.year select {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 14px;
+}
+ 
+.card-number,
+.cvv-details,
+.cvv-input input,
+.month select,
+.year select {
+    opacity: .7;
+    color: #86939e;
+}
+.card-number {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid #e1e8ee;
+    border-radius: 6px;
+}
+.month select,
+.year select {
+    width: 145px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid #e1e8ee;
+    border-radius: 6px;
+    background: url('caret.png') no-repeat;
+    background-position: 85% 50%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+ 
+.month select {
+    float: left;
+}
+ 
+.year select {
+    float: right;
+}
+.cvv-input input {
+    float: left;
+    width: 145px;
+    padding-left: 20px;
+    border: 2px solid #e1e8ee;
+    border-radius: 6px;
+    background: #fff;
+}
+ 
+.cvv-details {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    float: right;
+    margin-bottom: 20px;
+}
+ 
+.cvv-details p {
+    margin-top: 6px;
+}
