@@ -202,8 +202,8 @@ print_r($_SESSION);
              <p class="p-description"><?= htmlspecialchars($tour["duration"]) ?></p>
              <h3 class="section-title">Route-</h3>
              <p class="p-description"><?= htmlspecialchars($tour["route"]) ?></p>
-             <h3 class="section-title">Trip Highlights-</h3>
-             <p class="p-description"><?= htmlspecialchars($tour["highlight1"]) ?><b><?= htmlspecialchars($tour["highlight2"]) ?></p>
+             
+             
              <h3 class="section-title">Package-</h3>
              <p class="p-description"><?= htmlspecialchars($tour["package"]) ?></p>
              <h3 class="section-title">Price=</h3>
